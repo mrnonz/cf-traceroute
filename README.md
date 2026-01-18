@@ -9,7 +9,7 @@ $ ./cf-traceroute \
   -api-key="EXAMPLE" \
   -email="me@example.com" \
   -account-id="f037e56e89293a057740de681ac9abbe" \
-  -targets "example.com,google.com,cloudflare.com"
+  -targets "example.com,google.com,cloudflare.com" \
   -colos "den01,sfo06"
 
  cloudflare.com
