@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"flag"
 	"fmt"
 	"log"
@@ -91,7 +92,7 @@ func main() {
 		fmt.Printf("[DEBUG] using traceroute options: %+v\n", opts)
 	}
 
-	r, err := client.PerformTraceroute(*accountID, targetsMap, coloMap, opts)
+	r, err := client.PerformTraceroute(context.Background(), *accountID, targetsMap, coloMap, opts)
 	if err != nil {
 		log.Fatalf("failed to perform traceroute: %s", err)
 	}
